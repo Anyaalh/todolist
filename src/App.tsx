@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {Button} from "./Button";
 
 function App() {
     return (
@@ -8,7 +9,7 @@ function App() {
                 <h3>What to learn</h3>
                 <div>
                     <input/>
-                    <button>+</button>
+                    <Button title="+"/>
                 </div>
                 <ul>
                     <li><input type="checkbox" checked={true}/> <span>HTML&CSS</span></li>
@@ -16,9 +17,9 @@ function App() {
                     <li><input type="checkbox" checked={false}/> <span>React</span></li>
                 </ul>
                 <div>
-                    <button>All</button>
-                    <button>Active</button>
-                    <button>Completed</button>
+                    <Button title="All"/>
+                    <Button title="Active"/>
+                    <Button title="Complited"/>
                 </div>
             </div>
         </div>
