@@ -1,4 +1,4 @@
- type ButtonType = {
+type ButtonType = {
    title: string
  }
 
