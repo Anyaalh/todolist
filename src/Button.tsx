@@ -1,7 +1,8 @@
 type ButtonType = {
-   title: string
- }
+    title: string
+    onClickHandler?: () => void
+}
 
-export function Button (props: ButtonType) {
-   return <button>{props.title}</button>
+export function Button({title, onClickHandler}: ButtonType) {
+    return <button onClick={onClickHandler}>{title}</button>
 }
