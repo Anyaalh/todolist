@@ -8,7 +8,6 @@ import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import MenuIcon from '@mui/icons-material/Menu';
 import {createTheme, ThemeProvider} from '@mui/material/styles'
-import {teal, yellow} from "@mui/material/colors";
 import Switch from '@mui/material/Switch'
 
 
