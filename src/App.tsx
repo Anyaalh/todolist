@@ -17,7 +17,7 @@ export type TaskType = {
     isDone: boolean
 }
 export type FilterValuesType = 'all' | 'active' | 'completed'
-type TodolistType = {
+export type TodolistType = {
     id: string
     title: string
     filter: FilterValuesType
@@ -46,6 +46,8 @@ function App() {
         ],
     })
     const [themeMode, setThemeMode] = useState<ThemeMode>('light')
+
+
     const removeTask = (taskId: string, todolistId: string) => {
         const newTodolistTasks = {...tasks, [todolistId]: tasks[todolistId].filter(t => t.id !== taskId)}
         setTasks(newTodolistTasks)
@@ -96,6 +98,8 @@ function App() {
         const newTodolists = todolists.map(tl => tl.id === todolistId ? {...tl, title} : tl)
         setTodolists(newTodolists)
     }
+
+
 
     const changeModeHandler = () => {
         setThemeMode(themeMode === 'light' ? 'dark' : 'light')
